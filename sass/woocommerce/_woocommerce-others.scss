@@ -1,0 +1,131 @@
+/**
+* woocommerce.scss
+* Governs the general look and feel of WooCommerce sections of stores using themes that do not
+* integrate with WooCommerce specifically.
+*/
+/**
+* Imports
+*/
+@import "mixins";
+@import "variables";
+@import "animation";
+@import "fonts";
+/**
+* Utility classes
+*/
+.clear {
+	clear: both;
+}
+/**
+* Main WooCommerce styles
+*/
+.woocommerce {
+	.container{
+		width: 62rem;
+		max-width: 100%;
+	}
+	.blockUI.blockOverlay {
+		position: relative;
+		@include loader();
+	}
+	.loader {
+		@include loader();
+	}
+	a.remove {
+		display: block;
+		width: 32px;
+		height: 32px;
+		text-align: center;
+		line-height: 1;
+		color: white;
+		background: red;
+		text-decoration: none;
+		font-weight: 700;
+		border: 0;
+		padding: 0;
+		line-height: 29px;
+	}
+	small.note {
+		display: block;
+		color: $subtext;
+		font-size: .857em;
+		margin-top: 10px;
+	}
+	.quantity {
+		.qty {
+			width: 5.2rem !important;
+			text-align: center;
+			font-size: 1.3rem;
+			padding: 0.30rem !important;
+		}
+	}
+}
+.woocommerce-password-strength {
+	text-align: center;
+	font-weight: 600;
+	padding: 3px .5em;
+	font-size: 1em;
+	&.strong {
+		background-color: #c1e1b9;
+		border-color: #83c373;
+	}
+	&.short {
+		background-color: #f1adad;
+		border-color: #e35b5b;
+	}
+	&.bad {
+		background-color: #fbc5a9;
+		border-color: #f78b53;
+	}
+	&.good {
+		background-color: #ffe399;
+		border-color: #ffc733;
+	}
+}
+.woocommerce-password-hint {
+	margin: .5em 0 0 0;
+	display: block;
+}
+/* added to get around variation image flicker issue */
+.product.has-default-attributes.has-children {
+	> .images {
+		opacity: 0;
+	}
+}
+.woocommerce, .woocommerce-page {
+	.col2-set {
+		@include clearfix();
+		width: 100%;
+		.col-1 {
+			float: left;
+			width: 48%;
+		}
+		.col-2 {
+			float: right;
+			width: 48%;
+		}
+	}
+	img {
+		height: auto;
+		max-width: 100%;
+	}
+}
+.demo_store{
+	margin: 0;
+	padding: 1rem;
+	background: gainsboro;
+}
+
+
+.WooZone-price-info {
+	display: none;
+}
+
+.woocommerce-thankyou-order-received {
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
+
+.cart-empty {
+	margin-bottom: 1rem;
+}

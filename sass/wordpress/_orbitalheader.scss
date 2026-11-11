@@ -1,0 +1,446 @@
+hr.is-style-default {
+	border-top: 2px solid #ffd600;
+    width: 310px;
+    max-width: 100%;
+    margin: 1.15rem auto;
+    display: block;
+}
+
+
+.orbital-block-header {
+	background: #eee;
+	padding: 0 1rem;
+	align-items: center;
+	background-position: center;
+	background-size: cover;
+
+	.wp-block-columns {
+		align-items: center;
+	}
+
+	.wp-block-column {
+		margin-bottom: 0;
+	}
+
+	figure {
+		margin: 0;
+
+		img {
+			margin: 0;
+		}
+	}
+
+	.container{
+		position: relative;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		color: inherit;
+		margin-top: 0;
+	}
+
+	p.has-text-color a {
+		color: inherit;
+		text-decoration: underline;
+	}
+}
+
+.orbital-block-header.cover{
+	min-height: 95vh;
+	padding: 4rem 0;
+
+}
+
+@media(min-width: 48rem){
+	.orbital-block-header.cover{
+		min-height: 100vh;
+	}
+}
+
+.pt0 {
+	padding-top: 0;
+}
+
+.pt1 {
+	padding-top: 1rem;
+}
+
+.pt2 {
+	padding-top: 2rem;
+}
+
+.pt3 {
+	padding-top: 3rem;
+}
+
+.pt4 {
+	padding-top: 4rem;
+}
+
+.pt5 {
+	padding-top: 5rem;
+}
+
+.pt6 {
+	padding-top: 6rem;
+}
+
+.pt7 {
+	padding-top: 7rem;
+}
+
+.pt8 {
+	padding-top: 8rem;
+}
+
+.pb0 {
+	padding-bottom: 0;
+}
+
+.pb1 {
+	padding-bottom: 1rem;
+}
+
+.pb2 {
+	padding-bottom: 2rem;
+}
+
+.pb3 {
+	padding-bottom: 3rem;
+}
+
+.pb4 {
+	padding-bottom: 4rem;
+}
+
+.pb5 {
+	padding-bottom: 5rem;
+}
+
+.pb6 {
+	padding-bottom: 6rem;
+}
+
+.pb7 {
+	padding-bottom: 7rem;
+}
+
+.pb8 {
+	padding-bottom: 8rem;
+}
+
+.mt1 {
+	margin-top: 1rem;
+}
+
+.mt2 {
+	margin-top: 2rem;
+}
+
+.mt3 {
+	margin-top: 3rem;
+}
+
+.mt4 {
+	margin-top: 4rem;
+}
+
+.mt5 {
+	margin-top: 5rem;
+}
+
+.mt6 {
+	margin-top: 6rem;
+}
+
+.mt7 {
+	margin-top: 7rem;
+}
+
+.mt8 {
+	margin-top: 8rem;
+}
+
+.mb1 {
+	margin-bottom: 1rem;
+}
+
+.mb2 {
+	margin-bottom: 2rem;
+}
+
+.mb3 {
+	margin-bottom: 3rem;
+}
+
+.mb4 {
+	margin-bottom: 4rem;
+}
+
+.mb5 {
+	margin-bottom: 5rem;
+}
+
+.mb6 {
+	margin-bottom: 6rem;
+}
+
+.mb7 {
+	margin-bottom: 7rem;
+}
+
+.mb8 {
+	margin-bottom: 8rem;
+}
+
+@media(max-width: 48rem){
+	.ptm0 {
+		padding-top: 0rem;
+	}
+
+	.ptm1 {
+		padding-top: 1rem;
+	}
+
+	.ptm2 {
+		padding-top: 2rem;
+	}
+
+	.ptm3 {
+		padding-top: 3rem;
+	}
+
+	.ptm4 {
+		padding-top: 4rem;
+	}
+
+	.ptm5 {
+		padding-top: 5rem;
+	}
+
+	.ptm6 {
+		padding-top: 6rem;
+	}
+
+	.ptm7 {
+		padding-top: 7rem;
+	}
+
+	.ptm8 {
+		padding-top: 8rem;
+	}
+
+	.pbm0 {
+		padding-bottom: 0;
+	}
+
+	.pbm1 {
+		padding-bottom: 1rem;
+	}
+
+	.pbm2 {
+		padding-bottom: 2rem;
+	}
+
+	.pbm3 {
+		padding-bottom: 3rem;
+	}
+
+	.pbm4 {
+		padding-bottom: 4rem;
+	}
+
+	.pbm5 {
+		padding-bottom: 5rem;
+	}
+
+	.pbm6 {
+		padding-bottom: 6rem;
+	}
+
+	.pbm7 {
+		padding-bottom: 7rem;
+	}
+
+	.pbm8 {
+		padding-bottom: 8rem;
+	}
+
+	.mtm1 {
+		margin-top: 1rem;
+	}
+
+	.mtm2 {
+		margin-top: 2rem;
+	}
+
+	.mtm3 {
+		margin-top: 3rem;
+	}
+
+	.mtm4 {
+		margin-top: 4rem;
+	}
+
+	.mtm5 {
+		margin-top: 5rem;
+	}
+
+	.mtm6 {
+		margin-top: 6rem;
+	}
+
+	.mtm7 {
+		margin-top: 7rem;
+	}
+
+	.mtm8 {
+		margin-top: 8rem;
+	}
+
+	.mbm1 {
+		margin-bottom: 1rem;
+	}
+
+	.mbm2 {
+		margin-bottom: 2rem;
+	}
+
+	.mbm3 {
+		margin-bottom: 3rem;
+	}
+
+	.mbm4 {
+		margin-bottom: 4rem;
+	}
+
+	.mbm5 {
+		margin-bottom: 5rem;
+	}
+
+	.mbm6 {
+		margin-bottom: 6rem;
+	}
+
+	.mbm7 {
+		margin-bottom: 7rem;
+	}
+
+	.mbm8 {
+		margin-bottom: 8rem;
+	}
+}
+
+
+[class*="opacity-"]::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	background-color: inherit;
+}
+
+.opacity-0::before {
+	opacity: 0;
+}
+
+.opacity-10::before {
+	opacity: 0.1;
+}
+
+.opacity-20::before {
+	opacity: 0.2;
+}
+
+.opacity-30::before {
+	opacity: 0.3;
+}
+
+.opacity-40::before{
+	opacity: 0.4;
+}
+
+.opacity-50::before {
+	opacity: 0.5;
+}
+
+.opacity-60::before {
+	opacity: 0.6;
+}
+
+.opacity-70::before {
+	opacity: 0.7;
+}
+
+.opacity-80::before {
+	opacity: 0.8;
+
+}
+
+.opacity-90::before {
+	opacity: 0.9;
+}
+
+.opacity-100::before {
+	opacity: 1;
+}
+
+.container-36 .container {
+	width: 36rem;
+}
+
+.container-48 .container {
+	width: 48rem;
+}
+
+.container-60 .container {
+	width: 60rem;
+}
+
+.container-72 .container {
+	width: 72rem;
+}
+
+.container-84 .container {
+	width: 84rem;
+}
+
+.container-96 .container {
+	width: 96rem;
+}
+
+.text-black {
+	color: black;
+}
+
+.text-white {
+	color: white;
+}
+
+.text-teal{
+	color: teal;
+}
+
+.text-sky-blue{
+	color: skyblue;
+}
+
+.text-green{
+	color: green;
+}
+
+.text-pink{
+	color: pink;
+}
+
+.text-purple{
+	color: purple;
+}
+
+.text-orange{
+	color: orange;
+}

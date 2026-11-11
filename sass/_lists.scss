@@ -1,0 +1,21 @@
+.list{
+	
+	ul{
+		list-style-type: none;
+		padding: .25rem;
+		margin: 0;
+
+		li{
+			margin-bottom: -1px;
+			padding: 0.5rem;
+		}
+
+		a{
+			color: #222;
+		}
+
+		a.active {
+			font-weight: bold;
+		}
+	}
+}

@@ -1,0 +1,87 @@
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+        text-align:center;
+}
+.sticky {
+	display: block;
+}
+.bypostauthor {
+	display: block;
+}
+
+
+.header-image{
+	padding: 2rem;
+	text-align: center;
+	border-bottom:	1px solid #dbdbdb;
+
+	a{
+		display: block;
+	}
+}
+
+.site-main {
+	padding-bottom: 2rem;
+}
+
+#content-wrapper {
+	padding: 1rem;
+	background-color: white;
+}
+
+.error404 .widget {
+	width: 100%;
+	max-width: 100%;
+	padding: 0rem 1rem;
+}
+
+
+@media(min-width: $breakpoint-sm){
+	.error404 .site-main .widget {
+		max-width: 33.33%;
+		padding: 1.5rem;
+	}
+
+	.error404 .site-main .widget_text {
+		max-width: 50%;
+	}
+}

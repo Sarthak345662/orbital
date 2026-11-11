@@ -1,0 +1,75 @@
+.site-footer{
+	padding: 2rem 0;
+	border-top: 1px solid #eee;
+}
+
+
+.site-footer {
+	padding: 1rem;
+	border-top: 1px solid #dbdbdb;
+	letter-spacing: 1px;
+	background-color: white;
+
+	.widget-area-footer {
+		justify-content: space-between;
+		display: flex;
+		margin: 0 -1rem;
+
+		@media(max-width: $breakpoint-sm){
+			flex-wrap: wrap;
+		}
+	}
+
+	.widget-area {
+
+		color: black;
+		font-size: 14px;
+		padding: 0;
+
+		.widget-title {
+			font-size: 16px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin-bottom: 1rem;
+		}
+
+		.widget {
+			padding: 1.25rem;
+			width: 100%;
+		}
+
+		ul {
+			li {
+				//margin: 0;
+				line-height: 1;
+				a {
+					font-size: 14px;
+					color: black;
+
+				}
+			}
+		}
+
+		p { 
+			font-size: 14px; 
+		}
+
+		a { 
+			color: black; 
+		}
+
+	}
+
+	.credits {
+		padding: 1rem 0;
+		display: block;
+		a{
+			color: black;
+		}
+
+		p{
+			font-size: 1rem;
+		}
+	}
+}

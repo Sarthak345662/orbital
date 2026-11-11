@@ -1,0 +1,64 @@
+.woocommerce-message,
+.woocommerce-error,
+.woocommerce-info {
+	padding: 1rem 2rem 1rem 3.5rem !important;
+	margin: 0;
+	margin-bottom: 1rem;
+	position: relative;
+	background-color: lighten($secondary,5%);
+	color: $secondarytext;
+	border-top: 3px solid $primary;
+	list-style: none outside !important;
+	@include clearfix();
+	width: auto;
+	word-wrap: break-word;
+	&:before {
+		font-family: "WooCommerce";
+		content: "\e028";
+		display: inline-block;
+		position: absolute;
+		top: 1em;
+		left: 1.5em;
+	}
+	.button {
+		float: right;
+		margin: 0;
+		font-size: 13px;
+		padding: 0.25rem 0.5rem;
+	}
+	li {
+		list-style: none outside !important;
+		padding-left: 0 !important;
+		margin-left: 0 !important;
+	}
+}
+.woocommerce-message {
+	border-top-color: #8fae1b;
+	&:before {
+		content: "\e015";
+		color: #8fae1b;
+	}
+
+	.button {
+		background: #8fae1b;
+		color: white;
+	}
+}
+.woocommerce-info {
+	border-top-color: #1e85be;
+	&:before {
+		color: #1e85be;
+	}
+}
+.woocommerce-error {
+	border-top-color: #b81c23;
+	&:before {
+		content: "\e016";
+		color: #b81c23;
+	}
+}
+
+
+.woocommerce-NoticeGroup {
+	width: 100%;
+}

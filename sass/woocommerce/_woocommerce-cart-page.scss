@@ -1,0 +1,433 @@
+.woocommerce-cart,
+.woocommerce-checkout,
+#add_payment_method {
+
+	.site-header {
+		border: none;
+	}
+
+	.default-header {
+		background: #f3f3f3;
+		padding: 2rem;
+	}
+	
+
+	table.cart {
+		.product-thumbnail {
+			min-width: 64px;
+			max-width: 64px;
+		}
+		img {
+			width: 100%;
+			box-shadow: none;
+			border: 2px solid white;
+		}
+		th,
+		td {
+			vertical-align: middle;
+		}
+		td.actions {
+			padding: 1rem 0;
+			.coupon {
+				border: 1px solid #eeeeee;
+				.input-text {
+					float: left;
+					box-sizing: border-box;
+					margin: 0 4px 0 0;
+					line-height: 1;
+					margin-right: -1px;
+					border: none;
+				}
+			}
+		}
+		input {
+			margin: 0;
+			vertical-align: middle;
+			line-height: 1;
+		}
+	}
+	.wc-proceed-to-checkout {
+		@include clearfix;
+		padding: 1em 0;
+		a.checkout-button {
+			text-align: center;
+			margin-bottom: 1rem;
+			background-color: $woocommerce;
+			color: white;
+			padding: 1em;
+		}
+	}
+	.cart-collaterals {
+		.shipping_calculator {
+			.button {
+				width: 100%;
+				float: none;
+				display: block;
+			}
+			.shipping-calculator-button {
+				&:after {
+					@include iconafter( "\e019" );
+				}
+			}
+		}
+		.cart_totals {
+			p {
+				small {
+					color: $subtext;
+					font-size: 0.83em;
+				}
+			}
+			table {
+				margin-top: 2rem;
+				padding: 0;
+				tr:first-child {
+					th,
+					td {
+						border-top: 0;
+					}
+				}
+				th {
+					width: 40%;
+				}
+				td,
+				th {
+					vertical-align: top;
+					border-left: 0;
+					border-right: 0;
+					line-height: 1.5em;
+				}
+				small {
+					color: $subtext;
+				}
+				select {
+					width: 100%;
+				}
+			}
+			.discount td {
+				color: $highlight;
+			}
+			tr td,
+			tr th {
+				border-top: 1px solid $secondary;
+			}
+		}
+		.cross-sells {
+			div.products {
+				div.product {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	.checkout {
+		padding: 1rem;
+		max-width: none;
+		.col-2 {
+			h3#ship-to-different-address {
+				float: left;
+				clear: none;
+			}
+			.notes {
+				clear: left;
+			}
+			.form-row-first {
+				clear: left;
+			}
+		}
+		.create-account small {
+			font-size: 11px;
+			color: $subtext;
+			font-weight: normal;
+		}
+		div.shipping-address {
+			padding: 0;
+			clear: left;
+			width: 100%;
+		}
+		.shipping_address {
+			clear: both;
+		}
+	}
+	#payment {
+		border-radius: 5px;
+		ul.payment_methods {
+			@include clearfix();
+			text-align: left;
+			padding: 0;
+			margin: 0;
+			list-style: none outside;
+			li {
+				line-height: 2;
+				text-align: left;
+				margin: 0;
+				margin-bottom: 2rem;
+				font-weight: normal;
+				@include clearfix;
+				input {
+					margin: 0 1em 0 0;
+				}
+				img {
+					vertical-align: middle;
+					margin: -2px 0 0 .5em;
+					padding: 0;
+					position: relative;
+					box-shadow: none;
+				}
+				img + img {
+					margin-left: 2px;
+				}
+			}
+		}
+		div.form-row {
+			padding: 0;
+		}
+		div.payment_box {
+			position: relative;
+			box-sizing: border-box;
+			width: 100%;
+			font-size: 1rem;
+			border-radius: 2px;
+			line-height: 1.5;
+			color: $secondarytext;
+			input.input-text, textarea {
+				border-color: darken( $secondary, 15% );
+				border-top-color: darken( $secondary, 20% );
+			}
+			::-webkit-input-placeholder {
+				color: darken( $secondary, 20% );
+			}
+			:-moz-placeholder {
+				color: darken( $secondary, 20% );
+			}
+			:-ms-input-placeholder {
+				color: darken( $secondary, 20% );
+			}
+			.woocommerce-SavedPaymentMethods {
+				list-style: none outside;
+				margin: 0;
+				.woocommerce-SavedPaymentMethods-token,
+				.woocommerce-SavedPaymentMethods-new {
+					margin: 0 0 .5em 0;
+					label {
+						cursor: pointer;
+					}
+				}
+				.woocommerce-SavedPaymentMethods-tokenInput {
+					vertical-align: middle;
+					margin: -3px 1em 0 0;
+					position: relative;
+				}
+			}
+			.wc-credit-card-form {
+				border: 0;
+				padding: 0;
+				margin: 1em 0 0;
+			}
+			.wc-credit-card-form-card-number,
+			.wc-credit-card-form-card-expiry,
+			.wc-credit-card-form-card-cvc {
+				font-size: 1.5em;
+				padding: 8px;
+				background-repeat: no-repeat;
+				background-position: right .618em center;
+				background-size: 32px 20px;
+				&.visa {
+					background-image: url(../images/icons/credit-cards/visa.svg);
+				}
+				&.mastercard {
+					background-image: url(../images/icons/credit-cards/mastercard.svg);
+				}
+				&.laser {
+					background-image: url(../images/icons/credit-cards/laser.svg);
+				}
+				&.dinersclub {
+					background-image: url(../images/icons/credit-cards/diners.svg);
+				}
+				&.maestro {
+					background-image: url(../images/icons/credit-cards/maestro.svg);
+				}
+				&.jcb {
+					background-image: url(../images/icons/credit-cards/jcb.svg);
+				}
+				&.amex {
+					background-image: url(../images/icons/credit-cards/amex.svg);
+				}
+				&.discover {
+					background-image: url(../images/icons/credit-cards/discover.svg);
+				}
+			}
+			span.help {
+				font-size: .857em;
+				color: $subtext;
+				font-weight: normal;
+			}
+			.form-row {
+				margin: 0 0 1em;
+			}
+			p:last-child {
+				margin-bottom: 0;
+			}
+
+			p {
+				font-size: 0.75rem;
+			}
+		}
+		.payment_method_paypal {
+			.about_paypal {
+				float: right;
+				line-height: 52px;
+				font-size: 0.83em;
+			}
+			img {
+				max-height: 52px;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+.order_details {
+	@include clearfix();
+	margin: 0 0 1.5em;
+	list-style: none;
+	padding-left: 0;
+	li {
+		float: left;
+		margin-right: 2em;
+		text-transform: uppercase;
+		font-size: 0.715em;
+		line-height: 1;
+		border-right: 1px dashed darken( $secondary, 10% );
+		padding-right: 2em;
+		margin-left: 0;
+		padding-left: 0;
+		list-style-type: none;
+		strong {
+			display: block;
+			font-size: 1.4em;
+			text-transform: none;
+			line-height: 1.5;
+		}
+		&:last-of-type {
+			border: none;
+		}
+	}
+}
+table.cart,
+#content table.cart {
+	img {
+		height: auto;
+	}
+	td.actions {
+		text-align: right;
+		.input-text {
+			width: 160px;
+		}
+		.coupon {
+			float: left;
+			label {
+				display: none;
+			}
+		}
+	}
+}
+.cart-collaterals {
+	@include clearfix();
+	width: 100%;
+	.related {
+		width: 30.75%;
+		float: left;
+	}
+	.cross-sells {
+		width: 48%;
+		float: left;
+		div.products {
+			float: none;
+			li {
+				width: 48%;
+			}
+		}
+	}
+	.shipping_calculator {
+		width: 48%;
+		@include clearfix();
+		clear: right;
+		float: right;
+		.col2-set {
+			.col-1,
+			.col-2 {
+				width: 47%;
+			}
+		}
+	}
+}
+
+
+
+#place-order {
+	margin-bottom: 1rem;
+}
+
+
+.woocommerce-checkout #payment .payment_method_stripe label[for=payment_method_stripe] {
+	padding-left: 0 !important;
+}
+
+
+.wc_payment_method {
+	padding-left: 2rem;
+	position: relative;
+}
+
+.wc_payment_method input[type=radio] {
+    display: none;
+}
+
+/* Create a custom checkbox */
+.wc_payment_method > label:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 8px;
+    background-color: #eee;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    font-size: 22px;
+}
+
+/* On mouse-over, add a grey background color */
+.wc_payment_method:hover input[type=radio] ~ label:before {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.wc_payment_method input[type=radio]:checked ~ label:before {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.wc_payment_method > label:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.wc_payment_method input[type=radio]:checked ~ label:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.wc_payment_method label:after {
+    left: 9px;
+    top: 14px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.woocommerce-checkout-payment .button {
+	width: 100%;
+}

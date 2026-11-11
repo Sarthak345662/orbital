@@ -1,0 +1,24 @@
+.woocommerce-archive-title{
+	text-align: right;
+	padding-bottom: 10px;
+	margin-top: 0;
+	border-bottom: 1px dotted #ccc;
+	font-weight: 300;
+	font-size: 1.7rem;
+	text-transform: uppercase;
+	a{
+		text-decoration: none;
+	}
+}
+.product-cat-details {
+
+	margin: 2rem 0 3rem 0;
+	p{
+		font-size: 12px;
+	}
+	br{
+		content: "A";
+		margin-bottom: 10px;
+		display: block;
+	}
+}

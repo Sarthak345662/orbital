@@ -1,0 +1,169 @@
+.entry-item{
+	padding: 1rem;
+	width: 100%;
+	flex-basis: 100%;
+	max-width: 100%;
+
+
+
+	.entry-title {
+		margin-top: 0;
+		margin-bottom: 0.25rem;
+		font-size: 1.25rem;
+		color: black;
+		font-weight: bold;
+
+		a{
+			text-decoration: none;
+			display: block;
+		}
+	}
+
+	p {
+		margin-bottom: 0;
+		font-size: 1rem;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	.entry-header {
+		margin: 0;
+		clear: both;
+	}
+
+	.entry-date{
+		float: left;
+		p {
+			font-size: 14px;
+			color: #808080;
+		}
+	}
+
+	.entry-category {
+		float: right;
+
+		a{
+			color: black;
+			text-decoration: none;
+		}
+
+	}
+
+	.entry-author p {
+		font-size: 14px;
+		color: #666666;
+		text-transform: uppercase;
+	}
+
+	.entry-read-more {
+		display: block;
+		margin-top: 10px;
+	}
+}
+
+
+@media( min-width: $breakpoint-xs ){
+	.entry-item {
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+
+	.column-list {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+}
+
+@media( min-width: $breakpoint-sm ){
+
+	.column-half {
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+
+	.column-quarter {
+		flex-basis: 25%;
+		max-width: 25%;
+	}
+
+	.column-third {
+		flex-basis: 33.33333333%;
+		max-width: 33.33333333%;
+	}
+
+	.columns-1 .entry-item {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+
+	.columns-2 .entry-item {
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+
+	.columns-3 .entry-item {
+		flex-basis: 33.33333333%;
+		max-width: 33.33333333%;
+	}
+
+	.columns-4 .entry-item {
+		flex-basis: 25%;
+		max-width: 25%;
+	}
+
+	.columns-5 .entry-item {
+		flex-basis: 20%;
+		max-width: 20%;
+	}
+
+	.columns-6 .entry-item {
+		flex-basis: 16.6666666666%;
+		max-width: 16.6666666666%;
+	}
+
+	.columns-7 .entry-item {
+		flex-basis: 14.28%;
+		max-width: 14.28%;
+	}
+
+
+}
+
+
+
+.entry-related .entry-title {
+	margin-top: 0.5rem;
+	color: black;
+	font-weight: 400;
+	line-height: 1.1;
+}
+
+.entry-wrapper {
+	padding: 1rem;
+	border: 1px solid #eee;
+}
+
+.custom-link .btn {
+	border-color: #9c7e31 #90742d #786025 !important;
+	border-radius: 3px;
+	background: #f0c14b;
+	background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0,0,0,0);
+	color: #111;
+	margin-top: 1rem;
+	border: 1px solid black;
+	font-size: .8rem;
+	font-weight: bold;
+	padding: .5rem;
+}
+
+.custom-link .btn:hover {
+	background: #eeb933;
+	background: linear-gradient(to bottom, #f5d78e, #eeb933) repeat scroll 0 0 rgba(0,0,0,0);
+	color: #111 !important;
+}

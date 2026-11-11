@@ -1,0 +1,19 @@
+.jumbotron .wpcf7 {
+	padding: 2rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+	position: relative;
+	margin: 0 auto;
+	.ajax-loader{
+		position: absolute;
+		top: 0;
+	}
+}
+
+span.wpcf7-not-valid-tip, div.wpcf7-response-output{
+	font-size: 12px;
+}
+
+.widget-area .wpcf7-form  p{
+	margin-bottom: 1rem;
+}

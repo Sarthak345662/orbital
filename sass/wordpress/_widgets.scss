@@ -1,0 +1,79 @@
+.widget-area {
+	background-color: white;
+	margin-bottom: 1rem;
+	width: 100%;
+
+	@media(min-width: $breakpoint-sm){
+		padding: 1.5rem;
+		padding-top: 0;
+	}
+
+	.widget {
+		margin-bottom: 1rem;
+		@media(min-width: $breakpoint-sm){
+			margin-bottom: 3rem;
+			padding: 0 1rem;
+		}
+		
+		width: 100%;
+
+		ul, ol {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		img {
+			width: auto;
+            max-width: 100%;
+			margin-bottom: 0.25rem;
+		}
+	}
+	.widget-title {
+		text-transform: uppercase;
+		font-size: 1rem;
+		margin-top: 0;
+	}
+	.post-date {
+		display: block;
+	}
+
+	p {
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+
+}
+
+
+.entry-content .widget, .entry-content .widget-area {
+	padding: 0;
+}
+
+
+.widget-recent-posts {
+
+	.widget-recent-posts-item {
+		margin-bottom: 2rem;
+	}
+
+	img {
+		margin-bottom: 0.75rem;
+	}
+
+	a {
+		display: block;
+	}
+
+	p {
+		color: black;
+		font-size: 1.25rem;
+		line-height: 1.2;
+	}
+}
+
+
+.site-footer {
+	.widget-recent-posts .widget-recent-posts-item {
+		margin-bottom: 1rem;
+	}
+}

@@ -1,0 +1,134 @@
+.entry-content{
+	flex-basis: 100%;
+	max-width: 100%;
+}
+
+.post-thumbnail {
+	margin-bottom: 2rem;
+	text-align: center;
+
+	@media(max-width: $breakpoint-sm){
+		margin: 0 -1rem 2rem -1rem;
+	}
+}
+
+.no-sidebar .entry-content {
+	flex-basis: 100%;
+	max-width: 100%;
+}
+
+.entry-header {
+	.wp-post-image {
+		width: 100%;
+		margin-bottom: .5rem;
+		border: 1px solid #eee;
+	}
+}
+
+.entry-content, .entry-footer{
+	max-width: 100%;
+	position: relative;
+}
+.home-shop-section{
+	margin: 1rem 0;
+	.products {
+		margin-bottom: 3rem;
+	}
+}
+.home .entry-content{
+	margin-top: 0;
+}
+.home-section{
+	padding: 2rem 1rem;
+}
+
+ .post-index {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 24px;
+	margin-bottom: 24px;
+    padding-right: 44px;
+    position: relative
+}
+
+ .post-index span {
+    display: block
+}
+
+ .post-index ol,
+ .post-index ul {
+    margin-bottom: 0
+}
+
+ .post-index li {
+    margin-left: 34px;
+    margin-bottom: 6px
+}
+
+ .post-index a,
+ .post-index li {
+    line-height: 1.6
+}
+
+ .post-index .classh3 {
+    margin-left: 34px
+}
+
+.post-index .classh4 {
+    margin-left: 56px;
+}
+
+.post-index .classh5 {
+    margin-left: 78px;
+}
+
+.post-index .classh6 {
+    margin-left: 100px;
+}
+
+ .post-index #index-table {
+    margin-top: 18px
+}
+
+ .post-index .btn-show {
+    display: inline-block !important
+}
+
+ .post-index .btn-show {
+    position: absolute !important;
+    right: 2.85rem
+}
+
+ .post-index .checkbox input {
+    position: absolute;
+    opacity: 0
+}
+
+ .post-index .checkbox .check-table {
+    position: relative;
+	z-index: 1;
+    transition: all .2s;
+    height: 26px;
+    width: 26px;
+    cursor: pointer !important
+}
+
+ .post-index .checkbox .check-table svg {
+    width: 26px;
+    height: 26px;
+    stroke-width: 1.5;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round
+}
+
+ .post-index .checkbox input:checked~.check-table {
+    transform: rotate(180deg) !important
+}
+.checkbox .check-table svg {
+    stroke: black;
+}
+.post-index .bullet-li {
+	display: inline;
+}

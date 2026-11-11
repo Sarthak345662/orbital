@@ -1,0 +1,66 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-overflow-scrolling: touch;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+	max-width: 100%;
+}
+img, video {
+	height: auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+p img {
+	margin-bottom: 1rem;
+}
+textarea {
+	resize: vertical;
+}
+[role="button"] {
+	cursor: pointer;
+}
+
+pre {
+	overflow: hidden;
+}
+dt {
+	font-weight: bold;
+	text-decoration: underline;
+}
+dd {
+	margin: 0;
+	padding: 0 0 0.5em 0;
+}
+b, strong {
+	font-weight: bold;
+	color: black;
+}
+i, em {
+	font-style: italic;
+}
+
+figure{
+	margin-bottom: 1rem;
+}
+
+fieldset{
+	padding: 1rem;
+}

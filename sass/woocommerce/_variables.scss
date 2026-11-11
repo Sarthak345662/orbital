@@ -1,0 +1,17 @@
+/**
+* WooCommerce CSS Variables
+*/
+$woocommerce:   	#a46497;
+$green:         	#7ad03a;
+$red:           	#a00;
+$orange:        	#ffba00;
+$blue:          	#2ea2cc;
+$primary:           #a46497;
+$primarytext:       desaturate(lighten($primary, 50%), 18%);
+$secondary:         desaturate(lighten($primary, 40%), 21%);
+$secondarytext:     desaturate(darken($secondary, 60%), 21%);
+$highlight:         adjust-hue($primary, 150deg);
+$highlightext:      desaturate(lighten($highlight, 50%), 18%);
+$contentbg:         #fff;
+$subtext:           #777;
+$wccontainer: 		1200px;

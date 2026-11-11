@@ -1,0 +1,67 @@
+@import 'mixins/shadows';
+@import 'mixins/clearfix';
+
+
+@mixin lead(){
+	font-size: 1.4rem;
+}
+
+@mixin subtitle(){
+	font-size: 1.25rem;
+}
+
+@mixin text-shadow() {
+	text-shadow: 0 1px 1px rgba(0,0,0,0.25),0 1px 30px rgba(0,0,0,0.75);
+}
+@mixin image-filter() {
+	&::before{
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background:black;
+		opacity: 0.6;
+		top: 0;
+		z-index: 0;
+	}
+}
+@mixin make-btn($background, $hover){
+	color: white;
+	background-color: $background;
+	&:hover, &:focus, &:active, &.active, &:active:hover, &:active:focus {
+		background-color: $hover;
+		border-color: $hover;
+		color: white;
+	}
+}
+
+@mixin make-outline-btn($background){
+	color: $background;
+	background-color: transparent;
+	border: 1px solid $background;
+	&:hover, &:focus, &:active, &.active, &:active:hover, &:active:focus {
+		color: #fff;
+		background-color: $background;
+	}
+}
+
+@mixin make-container {
+	margin: 0 auto;
+	padding: 1rem;
+	max-width: 100%;
+	width: $container;
+	@include clearfix();
+}
+
+
+@mixin separator() {
+	&::before{
+		content: '';
+		display: block;
+		width: 100px;
+		height: 3px;
+		margin: 1.5rem 0;
+		background: #ff3366;
+	}
+}

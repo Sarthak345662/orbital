@@ -1,0 +1,58 @@
+.woocommerce-pagination {
+	display: block;
+	padding-left: 0;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border-radius: .25rem;
+	@include clearfix();
+}
+.woocommerce-pagination ul,
+.woocommerce-pagination ul li {
+	display: inline-block;
+	margin-bottom: 0;
+}
+.woocommerce-pagination li:first-child span {
+	margin-left: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.woocommerce-pagination li:first-child a,
+.woocommerce-pagination li:first-child span {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.woocommerce-pagination a,
+.woocommerce-pagination span {
+	position: relative;
+	float: left;
+	padding: .5rem .75rem;
+	line-height: 1.5;
+	color: #333;
+	text-decoration: none;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.woocommerce-pagination a:focus,
+.woocommerce-pagination a:hover {
+	background-color: #eceeef;
+	border-color: #ddd;
+}
+.woocommerce-pagination span.current,
+.woocommerce-pagination span.current:focus,
+.woocommerce-pagination span.current:hover {
+	z-index: 2;
+	cursor: default;
+	background-color: #f5f5f5;
+	border-color: #ddd;
+}
+.woocommerce-pagination .next,
+.woocommerce-pagination .prev {
+	margin-top: 0;
+}
+.woocommerce-pagination {
+	ul.page-numbers {
+		padding: 0;
+	}
+}

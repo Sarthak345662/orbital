@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+@import 'fonts';
+@import 'body';
+@import 'typo';
+@import 'layout';
+//@import 'flex';
+@import 'navbar';
+@import 'modal-menu';
+
+//Headers 
+@import 'headers/jumbotron';
+@import 'headers/default';
+
+//Footers
+@import 'footers/default';
+
+//Loops
+@import 'loops/base';
+@import 'loops/featured';
+@import 'loops/related';
+
+@import 'table';
+@import 'lists';
+@import 'blockquotes';
+@import 'pagination';
+@import 'alerts';
+@import 'badges';
+@import 'breadcrumbs';
+@import 'masonry';
+@import 'buttons';
+@import 'forms';
+@import 'social/social';
+@import 'gdpr';
+@import 'helpers';
+
+
+//ADMIN
+@import 'wordpress/wordpress';
+@import 'advertisement'

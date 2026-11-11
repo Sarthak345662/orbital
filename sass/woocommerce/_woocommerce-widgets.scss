@@ -1,0 +1,256 @@
+.widget_price_filter {
+	.price_slider {
+		margin-bottom: 1em;
+	}
+	.price_slider_amount {
+		text-align: right;
+		line-height: 2.4;
+		font-size: 0.8751em;
+		.button {
+			font-size: 1.15em;
+		}
+		.button {
+			float: left;
+		}
+	}
+	.ui-slider {
+		position: relative;
+		text-align: left;
+		margin-left: .5em;
+		margin-right: .5em;
+	}
+	.ui-slider .ui-slider-handle {
+		position: absolute;
+		z-index: 2;
+		width: 1em;
+		height: 1em;
+		background-color: $primary;
+		border-radius: 1em;
+		cursor: ew-resize;
+		outline: none;
+		top: -.3em;
+		margin-left: -.5em;
+	}
+	.ui-slider .ui-slider-range {
+		position: absolute;
+		z-index: 1;
+		font-size: .7em;
+		display: block;
+		border: 0;
+		border-radius: 1em;
+		background-color: $primary;
+	}
+	.price_slider_wrapper .ui-widget-content {
+		border-radius: 1em;
+		background-color: adjust_color($primary, $red: -(red(#444)), $green: -(green(#444)), $blue: -(blue(#444))); 
+		border: 0;
+	}
+	.ui-slider-horizontal {
+		height: .5em;
+	}
+	.ui-slider-horizontal .ui-slider-range {
+		top: 0;
+		height: 100%;
+	}
+	.ui-slider-horizontal .ui-slider-range-min {
+		left: -1px;
+	}
+	.ui-slider-horizontal .ui-slider-range-max {
+		right: -1px;
+	}
+}
+.widget_rating_filter {
+	ul {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		list-style: none outside;
+		li {
+			@include clearfix();
+			padding: 0 0 1px;
+			list-style: none;
+			a {
+				padding: 1px 0;
+				text-decoration: none;
+			}
+			.star-rating {
+				float: none;
+				display: inline-block;
+			}
+		}
+		li.chosen {
+			a {
+				&:before {
+					@include iconbefore( "\e013" );
+					color: $red;
+				}
+			}
+		}
+	}
+}
+.widget_layered_nav {
+	ul {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		list-style: none outside;
+		li {
+			@include clearfix();
+			padding: 0 0 1px;
+			list-style: none;
+			a,
+			span {
+				padding: 1px 0;
+			}
+		}
+		li.chosen {
+			a {
+				&:before {
+					@include iconbefore( "\e013" );
+					color: $red;
+				}
+			}
+		}
+	}
+}
+.widget_layered_nav_filters {
+	ul {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		list-style: none outside;
+		overflow: hidden;
+		zoom: 1;
+		li {
+			float: left;
+			padding: 0 1px 1px 0;
+			list-style: none;
+			a {
+				text-decoration: none;
+				&:before {
+					@include iconbefore( "\e013" );
+					color: $red;
+				}
+			}
+		}
+	}
+}
+.cart_list,
+.product_list_widget {
+	list-style: none outside;
+	padding: 0;
+	margin: 0;
+	li {
+		padding: 4px 0;
+		margin: 0;
+		@include clearfix();
+		list-style: none;
+		a {
+			display: block;
+			font-weight: 700;
+		}
+		a.remove {
+			position: absolute;
+			top: -10px;
+			right: -10px;
+		}
+		img {
+			margin-right: 1rem;
+			width: 48px;
+			height: auto;
+			box-shadow: none;
+			float: left;
+		}
+		dl {
+			margin: 0;
+			padding-left: 1em;
+			border-left: 2px solid rgba(0,0,0,0.1);
+			@include clearfix();
+			dt,
+			dd {
+				display: inline-block;
+				float: left;
+				margin-bottom: 1em;
+			}
+			dt {
+				font-weight: 700;
+				padding: 0 0 .25em 0;
+				margin: 0 4px 0 0;
+				clear: left;
+			}
+			dd {
+				padding: 0 0 .25em 0;
+				p:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.star-rating {
+			float: none;
+			position: absolute;
+			top: 15px;
+			left: 5px;
+		}
+	}
+}
+.product_list_widget:not(.cart_list){
+	li{
+		position: relative;
+		img{
+			width: 100%;
+		}
+	}
+	.product-title{
+		display: inline-block;
+		padding: 5px 0;
+	}
+}
+.widget_shopping_cart {
+	.total {
+		border-top: 3px double $secondary;
+		padding: 4px 0 0;
+		strong {
+			min-width: 40px;
+			display: inline-block;
+		}
+	}
+	.cart_list {
+		li {
+			position: relative;
+			padding-top: 0;
+			.quantity {
+				font-size: 0.80rem;
+			}
+		}
+	}
+	.buttons {
+		@include clearfix();
+	}
+}
+ul.cart_list,
+div.product_list_widget {
+	li {
+		@include mediaright();
+	}
+}
+#payment {
+	.form-row {
+		select {
+			width: auto;
+		}
+	}
+	.wc-terms-and-conditions, .terms {
+		text-align: left;
+		padding: 0 1em 0 0;
+		float:left;
+	}
+}
+
+
+.widget-area .cart_list li {
+	margin-bottom: 1rem;
+
+	p{
+		color: black;
+	}
+}
