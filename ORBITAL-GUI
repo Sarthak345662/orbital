@@ -1,0 +1,195 @@
+#!/usr/bin/env bash
+# ORBITAL-GUI  -  terminal menu to install / uninstall the Orbital WordPress theme
+# Run:  bash <(curl -sL https://raw.githubusercontent.com/Sarthak345662/orbital/main/ORBITAL-GUI)
+
+ZIP_URL="${ORBITAL_ZIP_URL:-https://github.com/Sarthak345662/orbital/raw/main/orbital.zip}"
+SLUG="orbital"
+
+# ---- colors (orange title, aqua side line)
+ESC=$'\033'
+ORANGE="${ESC}[1;38;5;208m"
+AQUA="${ESC}[38;5;51m"
+WHITE="${ESC}[1;97m"
+GREEN="${ESC}[1;92m"
+RED="${ESC}[1;91m"
+DIM="${ESC}[2m"
+RST="${ESC}[0m"
+BAR="${AQUA}┃${RST}"
+
+# read from the keyboard even when the script comes from curl / process substitution
+if ( : </dev/tty ) 2>/dev/null; then TTY=/dev/tty; else TTY=/dev/stdin; fi
+
+say()   { printf '%s  %s\n' "$BAR" "$1"; }
+blank() { printf '%s\n' "$BAR"; }
+ok()    { say "${GREEN}✔ $1${RST}"; }
+err()   { say "${RED}✘ $1${RST}"; }
+ask()   { printf '%s  %s' "$BAR" "$1"; read -r REPLY <"$TTY" || { printf '\n'; exit 0; }; }
+pause() { blank; ask "${DIM}Press Enter to go back...${RST}"; }
+
+banner() {
+  command -v clear >/dev/null 2>&1 && clear
+  printf '%s┏%s\n' "$AQUA" "$RST"
+  while IFS= read -r l; do
+    printf '%s  %s%s%s\n' "$BAR" "$ORANGE" "$l" "$RST"
+  done <<'ART'
+  ___  ____  ____ ___ _____  _    _
+ / _ \|  _ \| __ )_ _|_   _|/ \  | |
+| | | | |_) |  _ \| |  | | / _ \ | |
+| |_| |  _ <| |_) | |  | |/ ___ \| |___
+ \___/|_| \_\____/___| |_/_/   \_\_____|
+ART
+  say "${DIM}WordPress theme manager${RST}"
+  blank
+}
+
+# ---- helpers
+need() { command -v "$1" >/dev/null 2>&1; }
+
+find_wp() {
+  local d
+  for d in /var/www/html /var/www/wordpress /var/www /usr/share/nginx/html /srv/www "$HOME/public_html" "$HOME/www" "$PWD"; do
+    if [ -f "$d/wp-config.php" ]; then printf '%s' "$d"; return; fi
+  done
+  d=$(find /var/www "$HOME" -maxdepth 4 -name wp-config.php 2>/dev/null | head -n1)
+  [ -n "$d" ] && printf '%s' "$(dirname "$d")"
+}
+
+pick_wp() {   # sets WP and THEMES
+  local guess
+  guess="$(find_wp)"
+  [ -z "$guess" ] && guess="/var/www/html"
+  ask "WordPress folder ${DIM}[$guess]${RST}: "
+  WP="${REPLY:-$guess}"
+  WP="${WP%/}"
+  THEMES="$WP/wp-content/themes"
+  if [ ! -d "$THEMES" ]; then
+    err "Not found: $THEMES"
+    err "Give the folder that contains wp-config.php"
+    return 1
+  fi
+}
+
+wpcli() {
+  local extra=""
+  [ "$(id -u)" -eq 0 ] && extra="--allow-root"
+  wp "$@" --path="$WP" $extra 2>/dev/null
+}
+
+unzip_to() {   # unzip_to file dest
+  if need unzip; then unzip -q -o "$1" -d "$2"
+  elif need python3; then python3 -m zipfile -e "$1" "$2"
+  else return 1; fi
+}
+
+# ---- actions
+do_install() {
+  banner
+  say "${WHITE}INSTALL ORBITAL THEME${RST}"; blank
+  need curl || { err "curl is required"; pause; return; }
+  pick_wp || { pause; return; }
+
+  if [ -d "$THEMES/$SLUG" ]; then
+    ask "Orbital already exists. Replace it? ${DIM}[y/N]${RST}: "
+    case "$REPLY" in y|Y|yes|YES) ;; *) say "Cancelled."; pause; return ;; esac
+  fi
+
+  local tmp; tmp="$(mktemp -d)"
+  say "Downloading theme..."
+  if ! curl -fsSL "$ZIP_URL" -o "$tmp/orbital.zip"; then
+    err "Download failed. Check internet / ZIP_URL."; rm -rf "$tmp"; pause; return
+  fi
+  say "Installing..."
+  rm -rf "${THEMES:?}/$SLUG"
+  if ! unzip_to "$tmp/orbital.zip" "$THEMES"; then
+    err "Could not unzip. Install it:  apt install unzip"; rm -rf "$tmp"; pause; return
+  fi
+  rm -rf "$tmp"
+
+  if [ ! -f "$THEMES/$SLUG/style.css" ]; then
+    err "Install failed: style.css missing in $THEMES/$SLUG"; pause; return
+  fi
+
+  # same owner as wp-content so WordPress can manage the theme
+  if [ "$(id -u)" -eq 0 ]; then
+    chown -R "$(stat -c '%U:%G' "$WP/wp-content" 2>/dev/null)" "$THEMES/$SLUG" 2>/dev/null
+  fi
+  ok "Orbital installed in $THEMES/$SLUG"
+
+  if need wp; then
+    ask "Activate it now? ${DIM}[Y/n]${RST}: "
+    case "$REPLY" in n|N|no|NO) ;; *)
+      if wpcli theme activate "$SLUG" >/dev/null; then ok "Theme activated"; else err "Activation failed - do it from WP Admin"; fi ;;
+    esac
+  else
+    say "Now open WP Admin > Appearance > Themes > Activate ${ORANGE}Orbital${RST}"
+  fi
+  pause
+}
+
+do_uninstall() {
+  banner
+  say "${WHITE}UNINSTALL ORBITAL THEME${RST}"; blank
+  pick_wp || { pause; return; }
+
+  if [ ! -f "$THEMES/$SLUG/style.css" ]; then
+    err "Orbital is not installed in $THEMES"; pause; return
+  fi
+
+  if need wp; then
+    local active other
+    active="$(wpcli theme list --status=active --field=name)"
+    if [ "$active" = "$SLUG" ]; then
+      other="$(wpcli theme list --field=name | grep -vx "$SLUG" | head -n1)"
+      if [ -n "$other" ]; then
+        say "Orbital is the ACTIVE theme."
+        ask "Switch to '$other' before removing? ${DIM}[Y/n]${RST}: "
+        case "$REPLY" in n|N|no|NO) ;; *) wpcli theme activate "$other" >/dev/null && ok "Activated $other" ;; esac
+      else
+        err "Orbital is active and no other theme is installed. Install another theme first."
+        pause; return
+      fi
+    fi
+  else
+    say "${RED}If Orbital is your active theme, switch to another theme first or your site will break.${RST}"
+  fi
+
+  ask "Delete $THEMES/$SLUG ? ${DIM}[y/N]${RST}: "
+  case "$REPLY" in
+    y|Y|yes|YES) rm -rf "${THEMES:?}/$SLUG"; ok "Orbital removed" ;;
+    *) say "Cancelled." ;;
+  esac
+  pause
+}
+
+do_status() {
+  banner
+  say "${WHITE}STATUS${RST}"; blank
+  pick_wp || { pause; return; }
+  if [ -f "$THEMES/$SLUG/style.css" ]; then
+    ok "Installed: $THEMES/$SLUG"
+    local v; v="$(grep -m1 -i 'Version:' "$THEMES/$SLUG/style.css" | sed 's/.*Version:[[:space:]]*//')"
+    [ -n "$v" ] && say "Version: $v"
+    need wp && say "Active theme: $(wpcli theme list --status=active --field=name)"
+  else
+    err "Orbital is not installed"
+  fi
+  pause
+}
+
+# ---- main menu
+while true; do
+  banner
+  say "${ORANGE}1${RST}  Install Orbital theme"
+  say "${ORANGE}2${RST}  Uninstall Orbital theme"
+  say "${ORANGE}3${RST}  Check status"
+  say "${ORANGE}0${RST}  Exit"
+  blank
+  ask "Choose an option: "
+  case "$REPLY" in
+    1) do_install ;;
+    2) do_uninstall ;;
+    3) do_status ;;
+    0|q|Q|exit) say "Bye!"; blank; exit 0 ;;
+    *) ;;
+  esac
+done
