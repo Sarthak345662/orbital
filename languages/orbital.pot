@@ -1,0 +1,1327 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-07 07:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: inc/woocommerce-filters.php:308
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-wp-license-manager-client.php:55
+#: inc/class-wp-license-manager-client.php:99
+#, php-format
+msgid "%s License"
+msgstr ""
+
+#: template-parts/header/header-default.php:55
+#: template-parts/header/header-jumbotron.php:28
+msgid "404: Page Not Found"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:51
+msgid "Accept"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:91
+msgid "Activate"
+msgstr ""
+
+#: inc/meta-box.php:68
+msgid "Activate / Deactivate layout"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:69
+msgid "Activate on"
+msgstr ""
+
+#: inc/meta-box.php:154
+msgid "Add Custom Code"
+msgstr ""
+
+#: inc/meta-box.php:165
+msgid "Add Footer Code"
+msgstr ""
+
+#: inc/meta-box.php:159
+msgid "Add Header Code"
+msgstr ""
+
+#: functions.php:144 functions.php:153 functions.php:163 functions.php:173
+#: functions.php:182 functions.php:191 functions.php:200 functions.php:209
+#: functions.php:218 functions.php:227 functions.php:237 functions.php:247
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:15
+msgid "Adsense and Analytics"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:456
+msgid "Adsense Code"
+msgstr ""
+
+#: inc/meta-box.php:114
+msgid "Advertisment"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:87
+msgid "After Archive"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:91
+msgid "After Archive Mobile"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:61
+#: inc/customizer-parts/customizer-toc.php:123
+msgid "After Content"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:88
+msgid "After Description Archive"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:92
+msgid "After Description Archive Mobile"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:86
+msgid "After Featured Archive"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:90
+msgid "After Featured Archive Mobile"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:68
+msgid "After Featured Home"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:71
+msgid "After Featured Home Mobile"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:121
+msgid "After First \"h2\""
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:69
+msgid "After Home"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:72
+msgid "After Home Mobile"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:81
+msgid "After Page Content"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:84
+msgid "After Page Content Mobile"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:75
+msgid "After Single Content"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:78
+msgid "After Single Content Mobile"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:234
+#: inc/customizer-parts/customizer-social.php:278
+#: inc/customizer-parts/customizer-social.php:323
+#: inc/customizer-parts/customizer-social.php:368
+msgid "All devices"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:97
+msgid "Allow user to change visibility"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:21
+msgid "Analytics and Adsense codes"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:444
+msgid "Analytics Code"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:166
+msgid "Appearance editor"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:41
+msgid "Archive Ads"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:61
+msgid "Archive Mobile Ads"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:27
+msgid "Archives"
+msgstr ""
+
+#: functions.php:189
+msgid "Archives Sidebar"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:55
+msgid "Auto insert for the following content types"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:85
+msgid "Before Archive"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:89
+msgid "Before Archive Mobile"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:55
+#: inc/customizer-parts/customizer-toc.php:122
+msgid "Before Content"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:120
+msgid "Before First \"h2\""
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:67
+msgid "Before Home"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:70
+msgid "Before Home Mobile"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:79
+msgid "Before Page Content"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:82
+msgid "Before Page Content Mobile"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:73
+msgid "Before Single Content"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:76
+msgid "Before Single Content Mobile"
+msgstr ""
+
+#. Author of the theme
+msgid "BIGSEO"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:218
+msgid "Block browsing"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:142
+msgid "Bulleted list"
+msgstr ""
+
+#: inc/template-tags.php:156
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: inc/wpgallery.php:242
+msgid "Caption"
+msgstr ""
+
+#: inc/meta-box.php:108
+msgid "Category"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:238
+msgid "Centered"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:379
+msgid "Change codes"
+msgstr ""
+
+#: inc/custom-admin-notices.php:25
+msgid "Click on the link below"
+msgstr ""
+
+#: inc/customizer-parts/ei/control.php:13
+msgid ""
+"Click the button below to export the customization settings for this theme."
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:564
+msgid "Cluster Image Height"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:551
+msgid "Cluster Image Width"
+msgstr ""
+
+#: comments.php:45
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:32
+#, php-format
+msgid "Comments (%1$s)"
+msgstr ""
+
+#: comments.php:19
+msgid "Comments are closed."
+msgstr ""
+
+#: inc/class-wp-license-manager-client.php:159
+msgid "Complete the setup now."
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:342
+msgid "Container Width"
+msgstr ""
+
+#: functions.php:235
+msgid "Content 404"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:356
+msgid "Content-Sidebar Relation"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:160
+msgid "Cookie Options (GDPR)"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:323
+msgid "Cookie Policy URL"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:47
+msgid "Cookie settings"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:270
+msgid "Cookie warning message"
+msgstr ""
+
+#: inc/meta-box.php:62
+msgid "Custom Sidebar"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:85
+msgid "Customize the Table of Content"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:241
+msgid "Default Prefetch URLs"
+msgstr ""
+
+#: inc/woocommerce-filters.php:66 inc/woocommerce-filters.php:84
+msgid "Detailed category info to appear below the product list"
+msgstr ""
+
+#: inc/woocommerce-filters.php:64 inc/woocommerce-filters.php:80
+msgid "Details"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:229
+#: inc/customizer-parts/customizer-social.php:273
+#: inc/customizer-parts/customizer-social.php:318
+#: inc/customizer-parts/customizer-social.php:363
+msgid "Device Selector"
+msgstr ""
+
+#: inc/widgets/class-wp-widget-recent-posts.php:148
+msgid "Display post date?"
+msgstr ""
+
+#: inc/widgets/class-wp-widget-recent-posts.php:153
+msgid "Display thumbnail?"
+msgstr ""
+
+#: inc/custom-admin-notices.php:21
+msgid "Do you have any question?"
+msgstr ""
+
+#: inc/custom-admin-notices.php:22
+msgid "Don't hesitate to contact our support team."
+msgstr ""
+
+#: inc/customizer-parts/ei/control.php:28
+msgid "Download and import image files?"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:334
+msgid "Enable After Content Social"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:289
+msgid "Enable Before Content Social"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:205
+msgid "Enable cookies "
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:222
+#: inc/customizer-parts/customizer-social.php:266
+#: inc/customizer-parts/customizer-social.php:311
+#: inc/customizer-parts/customizer-social.php:356
+msgid "Enable Count"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:200
+msgid "Enable Fixed Bottom Social"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:245
+msgid "Enable Fixed Side Social"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:227
+msgid "Enable Quicklink"
+msgstr ""
+
+#: inc/customizer-parts/customizer-export-import.php:166
+#: inc/customizer-parts/customizer-export-import.php:170
+msgid ""
+"Error importing settings! Please check that you uploaded a customizer export "
+"file."
+msgstr ""
+
+#: inc/customizer-parts/customizer-export-import.php:154
+msgid "Error importing settings! Please try again."
+msgstr ""
+
+#: inc/customizer-parts/customizer-export-import.php:174
+msgid ""
+"Error importing settings! The settings you uploaded are not for the current "
+"theme."
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:516
+msgid "Excerpt Length"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:195
+msgid "Exclude jQuery on Fix Render Blocking"
+msgstr ""
+
+#: inc/customizer-parts/ei/control.php:10
+#: inc/customizer-parts/ei/control.php:15
+msgid "Export"
+msgstr ""
+
+#: inc/customizer-parts/customizer-export-import.php:54
+msgid "Export/Import"
+msgstr ""
+
+#: inc/meta-box.php:194
+msgid "File Optimization"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:157
+msgid "Fix Render Blocking"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:169
+msgid "Fix Render Blocking CSS"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:182
+msgid "Fix Render Blocking JS"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:43
+msgid "Fixed Bottom"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:49
+msgid "Fixed Side"
+msgstr ""
+
+#: inc/meta-box.php:79 inc/customizer-parts/customizer-gdpr.php:239
+msgid "Footer"
+msgstr ""
+
+#: functions.php:198
+msgid "Footer Widget Area 1"
+msgstr ""
+
+#: functions.php:207
+msgid "Footer Widget Area 2"
+msgstr ""
+
+#: functions.php:216
+msgid "Footer Widget Area 3"
+msgstr ""
+
+#: functions.php:225
+msgid "Footer Widget Area 4"
+msgstr ""
+
+#: inc/meta-box.php:176
+msgid "Force GDPR for code above"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:149
+msgid "Format"
+msgstr ""
+
+#: inc/meta-box.php:185 inc/customizer-parts/customizer-gdpr.php:176
+#: inc/customizer-parts/customizer-control.php:57
+msgid "Functionality Cookies"
+msgstr ""
+
+#: inc/meta-box.php:182
+msgid "GDPR type of code above"
+msgstr ""
+
+#: inc/custom-admin-notices.php:31
+msgid "Go to Support"
+msgstr ""
+
+#: inc/meta-box.php:73
+msgid "Header"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:172
+msgid "Headers"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:109
+msgid "Hide initially"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:28
+msgid "Home"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:26
+msgid "Home Ads"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:46
+msgid "Home Mobile Ads"
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:85
+msgid "Home Section"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://romualdfons.com/"
+msgstr ""
+
+#. URI of the theme
+msgid "https://orbitalthemes.net/"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:230
+#: inc/customizer-parts/customizer-social.php:274
+#: inc/customizer-parts/customizer-social.php:319
+#: inc/customizer-parts/customizer-social.php:364
+msgid "If you have a cache plugin, maybe you should refresh cache."
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:41
+msgid ""
+"If you would like to fully customise the position of the table of contents, "
+"you can use the <code>[orbital_toc]</code> shortcode by placing it at the "
+"desired position of your post, page or custom post type. This method allows "
+"you to generate the table of contents overwriting the selected option in "
+"<code>Position</code>."
+msgstr ""
+
+#: inc/customizer-parts/ei/control.php:20
+#: inc/customizer-parts/ei/control.php:33
+msgid "Import"
+msgstr ""
+
+#: inc/woocommerce-filters.php:218
+msgid "In Stock"
+msgstr ""
+
+#: inc/toc.php:169 inc/customizer-parts/customizer-toc.php:179
+msgid "Index"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:449
+msgid "Insert Analytics Code with script tag"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:461
+msgid "Insert the Adsense code with the script tag"
+msgstr ""
+
+#: inc/class-wp-license-manager-client.php:94
+msgid "Insert your license information to enable updates."
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:210
+#: inc/customizer-parts/customizer-control.php:552
+#: inc/customizer-parts/customizer-control.php:565
+msgid "It is necessary to regenerate all miniatures"
+msgstr ""
+
+#: template-parts/none/content-none.php:15
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:135
+#: inc/customizer-parts/customizer-gdpr.php:374
+msgid "Javascript codes"
+msgstr ""
+
+#: functions.php:101
+msgid "Lasts Posts"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:85
+msgid "Layout Settings"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:208
+msgid "Lazy Load (Experimental)"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:256
+msgid "Left"
+msgstr ""
+
+#: inc/class-wp-license-manager-client.php:72
+msgid "License"
+msgstr ""
+
+#: inc/class-wp-license-manager-client.php:78
+msgid "License e-mail address"
+msgstr ""
+
+#: inc/class-wp-license-manager-client.php:85
+msgid "License key"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:312
+msgid "Link Color"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:103
+msgid "Loops Settings"
+msgstr ""
+
+#: inc/wpgallery.php:234
+msgid "Masonry"
+msgstr ""
+
+#: inc/meta-box.php:102
+msgid "Meta"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:80
+msgid "Middle Page Content"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:83
+msgid "Middle Page Content Mobile"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:74
+msgid "Middle Single Content"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:77
+msgid "Middle Single Content Mobile"
+msgstr ""
+
+#: inc/meta-box.php:51
+msgid "Modify appearance"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:321
+msgid "Navbar Background Color"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:330
+msgid "Navbar Link Color"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:391
+msgid "Navbar Search"
+msgstr ""
+
+#: functions.php:180
+msgid "No advertisment Sidebar"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:143
+msgid "No numbers or bullet point"
+msgstr ""
+
+#: template-parts/none/content-none.php:5
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:530
+msgid "Number of columns"
+msgstr ""
+
+#: inc/widgets/class-wp-widget-recent-posts.php:142
+msgid "Number of posts to show:"
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:102
+msgid "Number of products"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:141
+msgid "Numbered list"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:152
+msgid ""
+"One domain per line. Format //example.com \n"
+"Ex. //fonts.googleapis.com"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:245
+msgid "One per line"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:30
+msgid ""
+"One per line \n"
+"Ex. https://example.com/font.woff2"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:90
+msgid ""
+"One per line \n"
+"Ex. https://example.com/image.jpg"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:70
+msgid ""
+"One per line \n"
+"Ex. https://example.com/script.css"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:50
+msgid ""
+"One per line \n"
+"Ex. https://example.com/style.css"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:110
+msgid ""
+"One per line \n"
+"Ex. https://example.com/videoembed/"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:131
+msgid ""
+"One url per line\n"
+"Ex. https://example.com/font.woff2"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:236
+#: inc/customizer-parts/customizer-social.php:280
+#: inc/customizer-parts/customizer-social.php:325
+#: inc/customizer-parts/customizer-social.php:370
+msgid "Only Desktop"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:235
+#: inc/customizer-parts/customizer-social.php:279
+#: inc/customizer-parts/customizer-social.php:324
+#: inc/customizer-parts/customizer-social.php:369
+msgid "Only Mobile"
+msgstr ""
+
+#: inc/meta-box.php:269
+msgid "Option Page"
+msgstr ""
+
+#. Name of the theme
+#: inc/gutenberg/gutenberg.php:57
+msgid "Orbital"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:400
+msgid "Orbital Menu"
+msgstr ""
+
+#: inc/back-compat.php:25 inc/back-compat.php:31 inc/back-compat.php:39
+#, php-format
+msgid ""
+"Orbital requires at least WordPress version 4.7. You are running version %s. "
+"Please upgrade and try again."
+msgstr ""
+
+#: inc/widgets/class-wp-widget-recent-posts.php:23
+msgid "Orbital: Recent Posts"
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:93
+msgid "Order by"
+msgstr ""
+
+#: inc/meta-box.php:188 inc/customizer-parts/customizer-gdpr.php:191
+#: inc/customizer-parts/customizer-control.php:69
+msgid "Other cookies"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:68
+msgid "Other cookies not covered in the previous points."
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:26
+msgid "Page"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:36
+msgid "Page Ads"
+msgstr ""
+
+#: functions.php:171
+msgid "Page Home Sidebar"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:56
+msgid "Page Mobile Ads"
+msgstr ""
+
+#: functions.php:151
+msgid "Pages Sidebar"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:9
+msgid "Performance Settings"
+msgstr ""
+
+#. Name of the template
+#: inc/meta-box.php:149
+msgid "Pilar Page"
+msgstr ""
+
+#: functions.php:161
+msgid "Pilar Pages Sidebar"
+msgstr ""
+
+#: inc/customizer-parts/customizer-export-import.php:35
+msgid "Please choose a file to import."
+msgstr ""
+
+#: inc/class-wp-license-manager-client.php:150
+#, php-format
+msgid "Please enter your email and license key to enable updates to %s."
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:129
+msgid "Position"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:216
+#: inc/customizer-parts/customizer-social.php:260
+#: inc/customizer-parts/customizer-social.php:305
+#: inc/customizer-parts/customizer-social.php:350
+msgid "Post Types"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:25
+msgid "Posts"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:91
+msgid "Posts Settings"
+msgstr ""
+
+#: functions.php:142
+msgid "Posts Sidebar"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:116
+msgid "Preconnect (URL)"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:137
+msgid "Prefetch (Domain)"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:95
+msgid "Preload Embed (iframes)"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:15
+msgid "Preload Fonts"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:75
+msgid "Preload Images"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:55
+msgid "Preload Scripts (JS)"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:35
+msgid "Preload Styles (CSS)"
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:66
+msgid "Price"
+msgstr ""
+
+#: functions.php:43
+msgid "Primary Menu"
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:109
+msgid "Product Quantity"
+msgstr ""
+
+#. Description of the theme
+msgid "Proudly coded by BIGSEO"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:215
+msgid "Quick Link"
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:64
+msgid "Random"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:22
+msgid "Read more"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:542
+msgid "Read More Text"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:49
+msgid "Read Our Cookie Policy"
+msgstr ""
+
+#: template-parts/none/content-none.php:9
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/widgets/class-wp-widget-recent-posts.php:34
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/meta-box.php:138 template-parts/single/content-related.php:16
+msgid "Related Posts"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:16
+msgid ""
+"Remember the limitations and <a rel=\"nofollow\" target=\"_blank\" "
+"href=\"https://support.google.com/adsense/answer/48182\">Google Adsense "
+"policies</a>."
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:10
+msgid ""
+"Remember to test each function separately and check the website for errors."
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:257
+msgid "Right"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:46
+msgid "Save settings"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:350
+msgid "Save settings button"
+msgstr ""
+
+#: searchform.php:14 template-parts/search/content-search-navbar.php:36
+#: template-parts/search/content-search-navbar.php:36
+msgid "Search for:"
+msgstr ""
+
+#: template-parts/header/header-default.php:52
+#: template-parts/header/header-jumbotron.php:25
+#, php-format
+msgid "Search results for %s"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:120
+msgid "Section description"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:106
+msgid "Section name"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:209
+#: inc/customizer-parts/customizer-social.php:253
+#: inc/customizer-parts/customizer-social.php:298
+#: inc/customizer-parts/customizer-social.php:343
+msgid "Select Social Networks"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:109
+msgid "SEO Settings"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:50
+msgid "Settings"
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:11
+msgid "Shop configuration "
+msgstr ""
+
+#: functions.php:245
+msgid "Shop Sidebar"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:507
+msgid "Show Author"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:498
+msgid "Show Category"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:431
+msgid "Show Category Link"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:489
+msgid "Show Date"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:480
+msgid "Show Excerpt"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:162
+msgid "Show H2 / H3"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:163
+msgid "Show H2 / H3 / H4"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:164
+msgid "Show H2 / H3 / H4 / H5"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:165
+msgid "Show H2 / H3 / H4 / H5 / H6"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:161
+msgid "Show only H2"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:422
+msgid "Show Related Posts"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:413
+#: inc/customizer-parts/customizer-control.php:471
+msgid "Show Thumbnails"
+msgstr ""
+
+#: inc/meta-box.php:85
+msgid "Sidebar"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:372
+msgid "Sidebar Order"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:31
+msgid "Single Ads"
+msgstr ""
+
+#: inc/customizer-parts/customizer-advertisment.php:51
+msgid "Single Mobile Ads"
+msgstr ""
+
+#: header.php:25
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:35
+msgid "Social Settings"
+msgstr ""
+
+#: inc/meta-box.php:126
+msgid "Social Shares"
+msgstr ""
+
+#: template-parts/none/content-none.php:11
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:98
+msgid "Sort by…"
+msgstr ""
+
+#: inc/class-wp-license-manager-client.php:118
+#: inc/class-wp-license-manager-client.php:231
+msgid "Status: Activated"
+msgstr ""
+
+#: inc/class-wp-license-manager-client.php:116
+#: inc/class-wp-license-manager-client.php:229
+msgid "Status: Not activated"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:382
+msgid "Sticky Sidebar"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:171
+#: inc/customizer-parts/customizer-control.php:73
+msgid "Strictly necessary cookies"
+msgstr ""
+
+#: inc/meta-box.php:56
+msgid "Subtitle"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:252
+msgid "Tab position to change preferences"
+msgstr ""
+
+#: inc/meta-box.php:132 inc/customizer-parts/customizer-toc.php:31
+msgid "Table of Content"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:284
+msgid "Text of the accept button"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:297
+msgid "Text of the configuration button"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:310
+msgid "Text of the link to the cookies policy"
+msgstr ""
+
+#: inc/extras.php:273
+msgid ""
+"The description is not prominent by default; however, some themes may show "
+"it."
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:72
+msgid ""
+"These cookies are essential to provide you with the services available on "
+"our website and to enable you to use some features of our website. Without "
+"these cookies, we cannot provide some services on our website."
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:60
+msgid ""
+"These cookies are used to collect information to analyze traffic and how "
+"users use our website. For example, these cookies may collect data such as "
+"how long you have been browsing our website or which pages you visit, which "
+"helps us to understand how we can improve our website for you. The "
+"information collected with these tracking and performance cookies does not "
+"identify any individual visitor."
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:56
+msgid ""
+"These cookies are used to provide you with a more personalized experience "
+"and to remember your choices on our website, for example, we may use "
+"functionality cookies to remember your language preferences or your login "
+"details."
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:64
+msgid ""
+"These cookies are used to show you advertisements that may be of interest "
+"based on your browsing habits. These cookies, served by our content and/or "
+"advertising providers, may combine the information they collected from our "
+"website with other information collected by them in connection with your "
+"browser activities across their network of websites. If you choose to opt-"
+"out or disable tracking and advertising cookies, you will still see "
+"advertisements but these may not be of interest to you."
+msgstr ""
+
+#: inc/meta-box.php:120
+msgid "Thumbnail"
+msgstr ""
+
+#: inc/meta-box.php:96 inc/customizer-parts/customizer-toc.php:184
+msgid "Title"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:337
+msgid "Title of the cookie settings popup"
+msgstr ""
+
+#: inc/widgets/class-wp-widget-recent-posts.php:137
+msgid "Title:"
+msgstr ""
+
+#: inc/wpgallery.php:238
+msgid "Titles"
+msgstr ""
+
+#: inc/customizer-parts/customizer-toc.php:40
+msgid "TOC Shortcode <code>[orbital_toc]</code>"
+msgstr ""
+
+#: inc/extras.php:259
+msgid "Top Description"
+msgstr ""
+
+#: inc/meta-box.php:186 inc/customizer-parts/customizer-gdpr.php:181
+#: inc/customizer-parts/customizer-control.php:61
+msgid "Traceability and performance cookies"
+msgstr ""
+
+#: inc/meta-box.php:187 inc/customizer-parts/customizer-gdpr.php:186
+#: inc/customizer-parts/customizer-control.php:65
+msgid "Tracking and advertising cookies"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:377
+msgid ""
+"Tracking and advertising cookies are managed from the \"Advertising and "
+"Analytics\" menu."
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:36
+#: inc/customizer-parts/customizer-social.php:44
+#: inc/customizer-parts/customizer-social.php:50
+#: inc/customizer-parts/customizer-social.php:56
+msgid ""
+"Twitter counts need connect to <a target=\"_blank\" href=\"http:"
+"//newsharecounts.com/\">http://newsharecounts.com/</a>"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:599
+msgid "Typo Body"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:589
+msgid "Typo Headings"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:579
+msgid "Typo Logo"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:97
+msgid "Typography Settings"
+msgstr ""
+
+#: inc/customizer-parts/ei/control.php:23
+msgid "Upload a file to import customization settings for this theme."
+msgstr ""
+
+#: inc/customizer-parts/ei/control.php:32
+msgid "Uploading..."
+msgstr ""
+
+#: inc/woocommerce-filters.php:230 inc/woocommerce-filters.php:305
+msgid "View your shopping cart"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:52
+msgid ""
+"We use cookies and other tracking techniques to improve your browsing "
+"experience on our website, to show you customized content and appropriate "
+"advertisements, to analyze traffic on our website and to understand where "
+"our visitors are coming from."
+msgstr ""
+
+#: inc/custom-admin-notices.php:17
+msgid "Welcome to Orbital Themes"
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:65
+msgid "What's new?"
+msgstr ""
+
+#: inc/customizer-parts/customizer-gdpr.php:234
+msgid "Widget position"
+msgstr ""
+
+#: inc/customizer-parts/customizer-social.php:29
+msgid "WooCommerce"
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:37
+msgid "Woocommerce Breadcrumb Active"
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:44
+msgid "Woocommerce Breadcrumb Align"
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:16
+msgid "Woocommerce Breadcrumbs"
+msgstr ""
+
+#: inc/customizer-parts/customizer-woocommerce.php:10
+msgid "Woocommerce Home"
+msgstr ""
+
+#: inc/wpgallery.php:246
+msgid "Wrapper"
+msgstr ""
+
+#: inc/customizer-parts/customizer-control.php:580
+#: inc/customizer-parts/customizer-control.php:590
+#: inc/customizer-parts/customizer-control.php:600
+msgid "You can enter a URL. For example from Google Fonts."
+msgstr ""
+
+#: inc/widgets/class-wp-widget-recent-posts.php:20
+msgid "Your site&#8217;s most recent Posts."
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:127
+msgid "“Preconnect” the location of your resources"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:148
+msgid "“Prefetch” the location of your resources"
+msgstr ""
+
+#: inc/customizer-parts/customizer-performance.php:26
+#: inc/customizer-parts/customizer-performance.php:46
+#: inc/customizer-parts/customizer-performance.php:66
+#: inc/customizer-parts/customizer-performance.php:86
+#: inc/customizer-parts/customizer-performance.php:106
+msgid "“Preload” the location of your resources"
+msgstr ""
